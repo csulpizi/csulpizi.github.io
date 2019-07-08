@@ -27,6 +27,8 @@ For each
 
 ### Example 1: Bicycle Position
 
+This example uses the position of objects from . Each data point 
+
 Total testing accuracy: 97.22% <br>
 Testing accuracy for label 0: 98.21% <br>
 Testing accuracy for label 1: 77.55% <br>
