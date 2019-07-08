@@ -8,6 +8,8 @@ One project that I've worked on was an automated bicycle counter that uses OpenC
 
 ### The Model
 
+<img src="images/k_means_model.png?raw=true"/>
+
 ### Example 1: Bicycle Position
 
 Total testing accuracy: 97.22%
