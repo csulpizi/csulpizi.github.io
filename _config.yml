@@ -1,6 +1,6 @@
 title: Cory Sulpizi
-logo: "/images/cory.png?raw=true" # your photo (or logo) here
-description: > # your text below (remove <br> elements if you don't need line breaks)
+logo: "/images/cory.png?raw=true" 
+description: > 
   A selection
   
 theme: jekyll-theme-minimal
