@@ -37,5 +37,9 @@ Testing accuracy for label 1: 77.55% <br>
 
 ### Example 2: 3-D Sample
 
+Noise ~N(0,0.03)
+
 91.74%
 [97.72 65.25 46.15 68.7  86.86]%
+
+<img src="images/k_means_example_2.gif?raw=true"/>
