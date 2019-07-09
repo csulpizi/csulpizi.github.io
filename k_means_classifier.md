@@ -36,3 +36,6 @@ Testing accuracy for label 1: 77.55% <br>
 <img src="images/k_means_example_1.png?raw=true"/>
 
 ### Example 2: 3-D Sample
+
+91.74%
+[97.72 65.25 46.15 68.7  86.86]%
