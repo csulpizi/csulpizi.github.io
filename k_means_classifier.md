@@ -2,31 +2,24 @@
 Code can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/k_means_classifier.py).<br>
 Readme can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/README.md).<br>
 
-
-One project I worked on was a bicycle counter that tracked objects and classified whether or not the object was a bike. One of the models used to classify the objects was a K-Means Classifier. This classifier took object position and velocity as inputs.
-
-
-
-
-
-
-The k_means_classifier functions use k-means clustering and logistic
-regression to classify points in an m-dimensional space. 
-
-### Code
-
-[Link](https://github.com/cory-sulpizi/cory-sulpizi.github.io/blob/master/k_means_classifier.py)
+One project I worked on was an automated bike counter that tracked objects and classified whether or not each object was a bike. One of the inputs of the classifier was a k-Means Classifier algorithm as described below. The classifier was used to classify objects based on their 2-dimensional on-screen position on screen as well as their 2-dimensional on-screen position. The classifier can be used to classify any data set that has m-dimensional continuous coordinates. 
 
 ### The Model
+The model relies on using k-means clustering to find the approximate cluster centres of the provided data points. These clusters are found for each class. i.e. a set of cluster centres is found for class 0, a set is found for class 1, etc. The set "g" contains all of the cluster centres among all classes. 
 
-The model relies on finding a number of k-cluster centres within the given data. 
+In order to predict the class of a data point, the following algorithm is performed:<br>
+1. For each cluster centre g(i), find the distance d(i) between this data point and that cluster centre.<br>
+2. For each cluster centre g(i) and each class j, find logit(i,j) = d(i) * w(i,j). w(i,j) is the weight for cluster centre i and class j. This value needs to be estimated.<br>
+3. For each class j, find ŷ(j) by using the softmax function, defined in the equation below. Softmax ensures that ŷ(j) is positive and that sum_j(ŷ(j)) is equal to 1, effectively transforming the model into a probability density function. b is the softmax bias, which needs to be estimated.<br>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
+4. Use argmax_j(ŷ(j)) to find the predicted label for the data point. <br>
 
-The model takes a series of data points with m-dimensional coordinates as inputs. A series of k-cluster centres is found within the data
+The image below demonstrates the algorithm visually in a tree diagram.<br>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/model_diagram.png?raw=true"/>
 
-For each 
+In order to use the model, we need to find the weights w, the softmax bias b, and the cluster centres g. The train() function uses stochastic gradient descent and logistic regression to find these values.
 
 
-<img src="images/k_means_model.png?raw=true"/>
 
 ### Example 1: Bicycle Position
 
