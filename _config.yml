@@ -9,4 +9,7 @@ footer-links:
   email: "cory.sulpizi@mail.utoronto.ca"
 
 theme: jekyll-theme-minimal
+
+sass:
+  style: :expanded
 #google_analytics: <tracking-id>
