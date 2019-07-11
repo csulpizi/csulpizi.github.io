@@ -22,9 +22,9 @@ The train() function works as follows:
 1. Find the k-cluster centres for each class. The number of cluster centres to find per class is specified by the user through the parameter ```k```. All of the cluster centres are combined into the set ```g```, which is an array of shape ```(sum(k), m)``` where ```m``` is the number of dimensions.
 2. Divide the dataset provided into training and testing sets. 80% of the data points are used for training and 20% are used for testing.
 3. Set initial values for array ```w``` and scalar ```b```.
-4. Find the loss of each data point using the log-loss function, defined below. ```loss_coef``` is a user provided value that defines how much to scale the loss of each class. <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
-5. Divide the data set into batches for stochastic gradient descent. 
-6. Use Adam Optimization to adjust the ```w``` and ```b``` values by minimizing ```sum(loss)```. 
+4. Divide the data set into batches for stochastic gradient descent. 
+5. Find the loss of each data point in the batch using the log-loss function, defined below. ```loss_coef``` is a user provided value that defines how much to scale the loss of each class. <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
+6. Use Adam Optimization to adjust the ```w``` and ```b``` values by minimizing ```sum(loss)``` among all points in the batch. 
 7. Repeat steps 4 - 6 for the specified number of iterations.
 8. Calculate the accuracy of the trained classifier by comparing the predicted labels for the testing data set to their actual values.
 9. Output the results.
