@@ -9,7 +9,7 @@ The model relies on using k-means clustering to find the approximate cluster cen
 
 In order to predict the class of a data point, the following algorithm is performed:<br>
 1. For each cluster centre g(i), find the distance d(i) between this data point and that cluster centre.<br>
-2. For each cluster centre g(i) and each class j, find logit(i,j) = d(i) * w(i,j). w(i,j) is the weight for cluster centre i and class j. This value needs to be estimated.<br>
+2. For each cluster centre g(i) and each class j, find ```logit(i,j) = d(i) * w(i,j)```. w(i,j) is the weight for cluster centre i and class j. This value needs to be estimated.<br>
 3. For each class j, find ŷ(j) by using the softmax function, defined in the equation below. Softmax ensures that ŷ(j) is positive and that sum_j(ŷ(j)) is equal to 1, effectively transforming the model into a probability density function. b is the softmax bias, which needs to be estimated. <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
 4. Use argmax to find the predicted label for the data point, by finding the j value that maximizes ŷ(j).<br>
 
