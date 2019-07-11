@@ -1,6 +1,6 @@
 ## K-Means Classifier
-Code can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/k_means_classifier.py).
-Readme can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/README.md).
+Code can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/k_means_classifier.py).<br>
+Readme can be found [here](https://github.com/cory-sulpizi/k_means_classifier/blob/master/README.md).<br>
 
 
 One project I worked on was a bicycle counter that tracked objects and classified whether or not the object was a bike. One of the models used to classify the objects was a K-Means Classifier. This classifier took object position and velocity as inputs.
