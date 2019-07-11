@@ -5,7 +5,7 @@ Readme can be found [here](https://github.com/cory-sulpizi/k_means_classifier/bl
 One project I worked on was an automated bike counter that tracked objects and classified whether or not each object was a bike. One of the inputs of the classifier was a k-Means Classifier algorithm as described below. The k-Means Classifier was used to classify objects based on their 2-dimensional on-screen position on screen as well as their 2-dimensional on-screen position. This classifier can be used to classify any data set that has m-dimensional continuous coordinates. 
 
 ### The Model
-The model relies on using k-means clustering to find the approximate cluster centres of the provided data points. These clusters are found for each class. i.e. a set of cluster centres is found for class 0, a set is found for class 1, etc. The set "g" contains all of the cluster centres among all classes. 
+The model relies on using [k-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) to find the approximate cluster centres of the provided data points. These clusters are found for each class. i.e. a set of cluster centres is found for class 0, a set is found for class 1, etc. The set "g" contains all of the cluster centres among all classes. 
 
 In order to predict the class of a data point, the following algorithm is performed:<br>
 1. For each cluster centre ```g(i)```, find the distance ```d(i)``` between this data point and that cluster centre.<br>
@@ -24,7 +24,7 @@ The train() function works as follows:
 3. Set initial values for array ```w``` and scalar ```b```.
 4. Divide the data set into batches for stochastic gradient descent. 
 5. Find the loss of each data point in the batch using the log-loss function, defined below. ```loss_coef``` is a user provided value that defines how much to scale the loss of each class. <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
-6. Use Adam Optimization to adjust the ```w``` and ```b``` values by minimizing ```sum(loss)``` among all points in the batch. 
+6. Use [Adam Optimization](https://arxiv.org/abs/1412.6980) to adjust the ```w``` and ```b``` values by minimizing ```sum(loss)``` among all points in the batch. 
 7. Repeat steps 4 - 6 for the specified number of iterations.
 8. Calculate the accuracy of the trained classifier by comparing the predicted labels for the testing data set to their actual values.
 9. Output the results.
