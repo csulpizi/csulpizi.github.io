@@ -41,7 +41,7 @@ Total testing accuracy: 97.56% <br>
 Testing accuracy for label 0: 98.67% <br>
 Testing accuracy for label 1: 75.26% <br>
 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/images/example_0.png?raw=true"/>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_0.png?raw=true"/>
 
 Since there are more data points with label == 0, the training function skewed the results towards label 0 (notice that the testing accuracy for label 0 is nearly 100%, whereas the accuracy for label 1 is only 75%). 
 
@@ -54,7 +54,7 @@ Total testing accuracy: 96.1%<br>
 Testing accuracy for label 0: 95.92%<br>
 Testing accuracy for label 1: 100.0%<br>
 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/images/example_1.png?raw=true"/>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_1.png?raw=true"/>
 
 As you can see the overall accuracy was slightly impacted, but the accuracy of label 1 was significantly improved. The decision region for class 0 became much smaller, and the decision region for class 1 became much larger.
 
@@ -69,7 +69,7 @@ Below is an example using the data and k = [50, 20, 10, 20, 30]:<br>
 Total testing accuracy: 91.69%<br>
 Testing accuracy by label: [97.96, 61.03, 56., 67.88, 91.74]%<br>
 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/images/example_2.gif?raw=true"/>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true"/>
 
 It is obvious that the large classes (specifically classes 0 and 4) have significantly larger accuracies. In the animation above you can even see that the smaller classes (specifically class 2) have very little "real estate" in the decision boundary. 
 
@@ -82,6 +82,6 @@ Total testing accuracy: 84.51%<br>
 Testing accuracy by label: [84.29, 90.08, 100., 79.82, 83.89]%<br>
 
 Below is a comparison between the default loss_coef and the adjusted loss coefficients as described above:
-<img src="https://github.com/cory-sulpizi/k_means_classifier/images/example_3.gif?raw=true"/>
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_3.gif?raw=true"/>
 
 As you can see, the overall accuracy went down, but the accuracies by label became much more equal. As you can see in the above animation the decision regions defined for the smaller classes became much larger. The decision region of class 2 exemplifies this: before adjusting the loss_coef there was only 1 decision region for class 2 and it was fairly small, whereas afterwards there are multiple regions for class 2 and they are much larger. Similarly, the decision region for class 0 became much smaller. 
