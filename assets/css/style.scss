@@ -20,6 +20,7 @@ header {
 #main-content h5,
 #main-content h6 {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  margin-left: -6px;
 }
 
 #main-content h1:before,
@@ -28,7 +29,7 @@ header {
 #main-content h4:before,
 #main-content h5:before,
 #main-content h6:before {
-  text-indent: 4px;
+  text-indent: 0px;
   padding-right: 0;
   margin-left: 0;
   content: none;
