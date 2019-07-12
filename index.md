@@ -5,5 +5,3 @@ Below is a list of various functions from various projects that demonstrate some
 ### Projects
 
 [<img align="left" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
-[<img padding="30px" align="left" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
-
