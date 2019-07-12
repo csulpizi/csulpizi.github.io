@@ -14,8 +14,9 @@ In order to predict the class of a data point, the following algorithm is perfor
 2. For each cluster centre ```g(i)```, find the distance ```d(i)``` between this data point and that cluster centre.<br>
 3. For each cluster centre ```g(i)``` and each class j, find ```logit(i,j) = d(i) * w(i,j)```. ```w(i,j)``` is the weight for cluster centre i and class j. This value needs to be estimated.<br>
 4. For each class j, find ```ŷ(j)``` by using the softmax function, defined in the equation below. Softmax ensures that ```ŷ(j)``` is positive and that ```sum(ŷ)``` is equal to 1, effectively transforming the model into a probability density function. ```b``` is the softmax bias, which needs to be estimated. 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
 5. Use argmax to find the predicted label for the data point, by finding the j value that maximizes ```ŷ(j)```.<br>
+
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
 
 The image below demonstrates the algorithm visually in a tree diagram.<br>
 <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/model_diagram.png?raw=true"/>
@@ -28,11 +29,12 @@ The train() function works as follows:
 3. Set initial values for array ```w``` and scalar ```b```.
 4. Divide the data set into batches for stochastic gradient descent. 
 5. Find the loss of each data point in the batch using the log-loss function, defined below. ```loss_coef``` is a user provided value that defines how much to scale the loss of each class. 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
 6. Use [Adam Optimization](https://arxiv.org/abs/1412.6980) to adjust the ```w``` and ```b``` values by minimizing ```sum(loss)``` among all points in the batch. 
 7. Repeat steps 4 - 6 for the specified number of iterations.
 8. Calculate the accuracy of the trained classifier by comparing the predicted labels for the testing data set to their actual values.
 9. Output the results.
+
+<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
 
 Once the train() function is performed, the predict() function can be used to predict labels for any provided points.
 
