@@ -16,7 +16,8 @@ In order to predict the class of a data point, the following algorithm is perfor
 4. For each class j, find ```ŷ(j)``` by using the softmax function, defined in the equation below. Softmax ensures that ```ŷ(j)``` is positive and that ```sum(ŷ)``` is equal to 1, effectively transforming the model into a probability density function. ```b``` is the softmax bias, which needs to be estimated. 
 5. Use argmax to find the predicted label for the data point, by finding the j value that maximizes ```ŷ(j)```.<br>
 
-<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
+Softmax:<br>
+<img height="100px" src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
 
 The image below demonstrates the algorithm visually in a tree diagram.<br>
 <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/model_diagram.png?raw=true"/>
