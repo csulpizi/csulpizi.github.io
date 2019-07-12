@@ -14,28 +14,19 @@ header {
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
-#main-content h1:before {
-  content: "";
+#main-content h1,h2,h3,h4,h5,h6:
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
-#main-content h2:before {
-  content: "";
-}
-
-#main-content h3:before {
-  content: "";
-}
-
-#main-content h4:before {
-  content: "";
-}
-
-#main-content h5:before {
-  content: "";
-}
-
+#main-content h1:before,
+#main-content h2:before,
+#main-content h3:before,
+#main-content h4:before,
+#main-content h5:before,
 #main-content h6:before {
-  content: "";
+  padding-right: 0;
+  margin-left: 0;
+  content: none;
 }
 
 //section {
