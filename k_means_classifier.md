@@ -16,7 +16,7 @@ In order to predict the class of a data point, the following algorithm is perfor
 4. For each class j, find ```ŷ(j)``` by using the softmax function, defined in the equation below. Softmax ensures that ```ŷ(j)``` is positive and that ```sum(ŷ)``` is equal to 1, effectively transforming the model into a probability density function. ```b``` is the softmax bias, which needs to be estimated. 
 5. Use argmax to find the predicted label for the data point, by finding the j value that maximizes ```ŷ(j)```.<br>
 
-Softmax:<br>
+Softmax function:<br>
 <img height="100px" src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/softmax.jpg?raw=true"/>
 
 The image below demonstrates the algorithm visually in a tree diagram.<br>
@@ -35,6 +35,7 @@ The train() function works as follows:
 8. Calculate the accuracy of the trained classifier by comparing the predicted labels for the testing data set to their actual values.
 9. Output the results.
 
+Weighted Log-Loss Function:<br>
 <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/log_loss.jpg?raw=true"/>
 
 Once the train() function is performed, the predict() function can be used to predict labels for any provided points.
