@@ -4,13 +4,15 @@
 @import "{{ site.theme }}";
 
 header {
+  padding-top: 30px;
+  padding-bottom: 20px;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   background: #cbe8d7;
 }
 
 header img {
   float: left;
-  padding-right: 40px;
+  padding-right: 30px;
 }
 
 header h1 {
