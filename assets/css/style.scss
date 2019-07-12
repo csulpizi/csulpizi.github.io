@@ -4,8 +4,9 @@
 @import "{{ site.theme }}";
 
 header {
+  float: left;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
-  background: #ddd
+  background: #ddd;
 }
 
 #main-content {
