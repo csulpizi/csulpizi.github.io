@@ -11,8 +11,32 @@ header {
 #main-content {
   float: center;
   width: 1000px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
 }
 
+#main-content h1:before {
+  content: "";
+}
+
+#main-content h2:before {
+  content: "";
+}
+
+#main-content h3:before {
+  content: "";
+}
+
+#main-content h4:before {
+  content: "";
+}
+
+#main-content h5:before {
+  content: "";
+}
+
+#main-content h6:before {
+  content: "";
+}
 
 //section {
 //  width:800px;
