@@ -6,9 +6,9 @@ Readme can be found [here](https://github.com/cory-sulpizi/k_means_classifier/bl
 
 One project I worked on was an automated bike counter that tracked objects and classified whether or not each object was a bike. One of the inputs of the classifier was a k-Means Classifier algorithm as described below. The k-Means Classifier was used to classify objects based on their 2-dimensional on-screen position and also their 2-dimensional on-screen velocity. This classifier can be used to classify any data set that has m-dimensional continuous coordinates. 
 
-### The Model
 The model relies on using [k-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) to find the approximate cluster centres of the provided data points. The distance between data points and each of those cluster centres is fed into a perceptron that decides which class that point belongs to. This process effectively defines a "decision region" for each class, which is a region in space wherein any point within that region is predicted to be a member of that class. 
 
+### The Model
 In order to predict the class of a data point, the following algorithm is performed:<br>
 1. Clusters are found for each class. i.e. a set of cluster centres is found for class 0, a set is found for class 1, etc. The set "g" contains all of the cluster centres among all classes. 
 2. For each cluster centre ```g(i)```, find the distance ```d(i)``` between this data point and that cluster centre.<br>
