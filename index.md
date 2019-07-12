@@ -4,13 +4,4 @@ Below is a list of various functions from various projects that demonstrate some
 
 ### Projects
 
-[<img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true"/>](k_means_classifier.md)
-
-<img align="left" width="200px" height="200px" src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true"/> <img align="left" width="200px" height="200px" src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true"/> <img align="left" width="200px" height="200px" src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true"/>
-
-<dl>
-<div class="container">
-  <img src="https://github.com/cory-sulpizi/k_means_classifier/blob/master/images/example_2.gif?raw=true">
-  <div class="centered">Centered</div>
-</div>
-</dl>
+[<img src="menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
