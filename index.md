@@ -5,3 +5,4 @@ Below is a list of various functions from various projects that demonstrate some
 ### Projects
 
 [<img align="left" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
+[<img padding="30" align="left" width="250px" height="250px" src="images/menu_linreg_tracker.gif?raw=true"/>](linreg_object_tracker.md)
