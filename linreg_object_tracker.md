@@ -22,26 +22,27 @@ Each frame, the following actions are performed:
 1. Determine whether or not any of the active objects should be changed to inactive. If the object's predicted location is off-screen, or if too much time has passed since the object was assigned a new point, that object is removed from the active objects list.
 2. Calculate the predicted location of each active object.
 3. Calculate the distance between each of the items in this frame and the predicted locations of each active object.
-4. Find the item and the object with the minimum distance. If that distance is less than ```bound_tight``` then add that item to that object. ```bound_tight``` is a user-provided input that governs the maximum distance an item can be from the predicted location of an object and still be considered a member of that object. 
+4. Find the item and the object with the minimum distance. If that distance is less than ```bound_tight``` then assign that item to that object. ```bound_tight``` is a user-provided input that governs the maximum distance an item can be from the predicted location of an object and still be considered a member of that object. 
 5. Repeat step 4 with all of the remaining items and objects until there are no items, no objects, or until the minimum distance exceeds ```bound_tight```.
 6. Use linear regression to recalculate the trajectory of each of the objects. The trajectory is calculated using the ```m``` most recent items in each object. ```m``` is a user-inputted value.
 
 #### Object Creation
 After performing item assignment, if there are still items left over, the algorithm determines whether or not those points should be considered new objects using the following actions (this algorithm is effectively a [RANSAC](https://en.wikipedia.org/wiki/Random_sample_consensus) algorithm):
 1. For each combination of unused items in this frame and unused items in the previous frame, find the parameters of the line passing through those points. Call these combinations the "pairs".
-2. For each of the pair, find the line's predicted location for the next 5 time frames.
+2. For each of the pairs, find the line's predicted location for the next 5 time frames.
 3. Calculate the distance between those predicted locations and all of the items in the next 5 time frames.
 4. Calculate the "score" of each of the lines. For each distance calculated above, add 2 to the score for every distance that's smaller than the ```bound_tight```, and add 1 to the score for every distance that's between ```bound_tight``` and ```2 * bound_tight```.
-5. Find the pair with the highest score that has at least one item within ```bound_tight``` of the predicted locations, and create a new object with that pair of items in it. 
+5. Find the pair with the highest score that has at least one item within ```bound_tight``` of the predicted locations, and create a new object and assigned that pair of items to it. 
 6. Repeat steps 1 through 5 until there are no remaining pairs with at least 1 point within the ```bound_tight```. 
 
 ### Example: Tracking Cars through a Scene.
-This example uses points that were found by using background detection on a video of cars moving down a street. Each of the points represents a car that was detected. 
+This example uses items that were found by using background detection on a video of cars moving down a street. Each of the points represents a car that was detected. 
 
 The plot below shows 4 frames taken from the aforementioned data set. 
 <img src="https://github.com/csulpizi/linreg_object_tracker/blob/master/images/example_1.jpg?raw=true">
 
-The blue object demonstrates how the items are assigned to existing objects. The blue "x" points are all of the items belonging to the blue object, the blue line is the calculated trajectory of that object, the end of the line represents the predicted location of that object in this time frame, and the grey circle shows the ```bound_tight``` distance from the predicted location. The black "x" points represent items that have not yet been classified. You can see that in each frame there is an item within the grey circle, and so each of those items is added to the blue object. 
+The blue object demonstrates how items are assigned to existing objects. The blue "x" points are all of the items belonging to the blue object*, the blue line is the calculated trajectory of that object, the end of the line represents the predicted location of that object in this time frame, and the grey circle shows the ```bound_tight``` distance from the predicted location. The black "x" points represent items that have not yet been classified. You can see that in each frame there is an item within the grey circle, and so each of those items is added to the blue object. <br>
+*Note: The blue items are all from previous time frames. They are shown simply to show the motion of the object over time.
 
 The green object demonstrates how new objects are created. At t=551 you can see an item that is not assigned to any object (the black "x" at the bottom of the plot). At t=552, you can see a new item appear near the previous item (the previous item is shown in grey). The algorithm decides that there are enough items in the trajectory of this potential object, and so the green object is created. You can see in t=553 and t=554 that new items are within the ```bound_tight``` distance and are therefore added to the green object. 
 
