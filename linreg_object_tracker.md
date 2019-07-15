@@ -46,7 +46,7 @@ The blue object demonstrates how items are assigned to existing objects. The blu
 
 The green object demonstrates how new objects are created. At t=551 you can see an item that is not assigned to any object (the black "x" at the bottom of the plot). At t=552, you can see the item from the previous frame (shown in grey) next to a new item (shown in black). These two points are considered a potential new object. The algorithm decides that there are enough items in the future trajectory of this potential object, and so the green object is created. You can see in t=553 and t=554 that new items are within the ```bound_tight``` distance and are therefore added to the green object. 
 
-The animation below shows the object tracking results superimposed on the source video. 
+The animation below shows object tracking results superimposed on the source video. 
 <img src="https://github.com/csulpizi/linreg_object_tracker/blob/master/images/example_2.gif?raw=true">
 
 As you can see the algorithm works well even when there are multiple objects on screen at the same time, and even when the motion of the object is non-linear. 
