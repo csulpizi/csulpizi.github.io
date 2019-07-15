@@ -35,6 +35,13 @@ After performing item assignment, if there are still items left over, the algori
 5. Find the pair with the highest score that has at least one item within ```bound_tight``` of the predicted locations, and create a new object and assigned that pair of items to it. 
 6. Repeat steps 1 through 5 until there are no remaining pairs with at least 1 point within the ```bound_tight```. 
 
+#### Limitations
+One of the major drawbacks of this algorithm is that it does not use visuals to determine which items belong to which objects. As such, if objects get to close or cross paths, it is possible that the algorithm would fail to detect which object is which. It is also possible that some items could be accidentally assigned to objects despite the fact that they are visually very different. 
+
+The flipside is that this algorithm is quite simple. You do not need to provide any visual information, and the only information you need to provide is a series of coordinates.
+
+Lastly, this algorithm is intended to be used on objects whose motion is fairly predictable and is close-to-linear. This algorithm would not work well for objects that change direction very rapidly (say, for example, a ball bouncing off of a wall) or objects with very non-linear motion (say, for example, a ball falling to the ground). 
+
 ### Example: Tracking Cars through a Scene.
 This example uses items that were found by using background detection on a video of cars moving down a street. Each of the points represents a car that was detected. 
 
