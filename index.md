@@ -2,7 +2,7 @@
 
 Below is a list of various functions from various projects that demonstrate some of my work. Click on any of the images to read about that project.
 
-### AI / ML / CV
+### Inference Algos + Computer Vision
 
 [<img width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
 <img src="images/spacer.png?raw=true"/>
