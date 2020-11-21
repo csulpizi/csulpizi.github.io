@@ -14,7 +14,7 @@ Below is a list of various functions from various projects that demonstrate some
 
 [<img align="left" width="250px" height="250px" src="images/menu_clojure_cawfn.png"/>](https://github.com/csulpizi/cawfn)
 <img align="left" src="images/spacer.png?raw=true"/>
-[<img align="left" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](https://github.com/csulpizi/with-redefs-x)
+[<img align="left" width="250px" height="250px" src="images/menu_clojure_with_redefs_x?raw=true"/>](https://github.com/csulpizi/with-redefs-x)
 
 <br><br><br><br><br><br><br><br><br><br>
 
