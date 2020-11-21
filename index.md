@@ -6,7 +6,7 @@ Below is a list of various algorithms or projects that demonstrate some of my wo
 [<img align="left" padding="150px" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true" padding="25px">](k_means_classifier.md)
 [<img align="left" padding="150px" width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true" padding="25px">](linreg_object_tracker.md)
 
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br> ;;hacky hack hack
 
 ### Clojure Projects
 
