@@ -3,12 +3,12 @@ logo: "/images/Cory.png?raw=true"
 description: > 
   M.Eng, University of Toronto<br>
   -----------------------------------<br>
-  software engineering, system architecture, inference algorithms<br>
-  e: cory.sulpizi@mail.utoronto.ca<br>
+  software engineer<br>
+  e: csulpz@gmail.com<br>
   <a href="https://github.com/csulpizi">github profile</a>
 
 footer-links:
-  email: "cory.sulpizi@mail.utoronto.ca"
+  email: "csulpz@gmail.com"
 
 theme: jekyll-theme-architect
 
