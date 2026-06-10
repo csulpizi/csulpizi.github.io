@@ -2,17 +2,19 @@
 
 Below is a list of various functions from various projects that demonstrate some of my work. Click on any of the images to read about that project.
 
-### Inference Algos + Computer Vision
+## C\#
 
-[<img width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](k_means_classifier.md)
-<img src="images/spacer.png?raw=true"/>
-[<img width="250px" height="250px" src="images/menu_linreg_tracker.gif?raw=true"/>](linreg_object_tracker.md)
-
+[<img width="250px" src="images/menu_chainsharp.png"/>](https://github.com/csulpizi/ChainSharp)
+ 
 ## Clojure
 
 [<img width="250px" height="250px" src="images/menu_clojure_cawfn.png"/>](https://github.com/csulpizi/cawfn)
 <img src="images/spacer.png?raw=true"/>
 [<img width="250px" height="250px" src="images/menu_clojure_with_redefs_x.png"/>](https://github.com/csulpizi/with-redefs-x)
+
+## Python
+
+[<img width="250px" height="250px" src="images/menu_icon_k_means.gif?raw=true"/>](https://github.com/csulpizi/Python-K-Means-Classifier)
 
 ## Java
 
