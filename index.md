@@ -7,4 +7,5 @@
 |[<img width="150px" height="150px" src="images/menu_java_publications.png"/>](https://github.com/csulpizi/publications)|[Repository](https://github.com/csulpizi/publications)</br></br>A lightweight Java class for broadcasting messages and triggering events synchronously.|
 
 Other projects:
-- [Fedora Discord Updater](https://github.com/csulpizi/Fedora-Discord-Updater) Helper script for installing / updating discord on fedora
+- [Fedora Discord Updater](https://github.com/csulpizi/Fedora-Discord-Updater) Helper shell script for installing / updating discord on fedora
+- [Blender Scripts](https://github.com/csulpizi/blender_scripts) A few Blender scripts to speed up workflows
