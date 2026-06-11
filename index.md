@@ -1,5 +1,5 @@
 | | |
-|----|----|
+|----|:----|
 |[<img width="300px" src="images/menu_chainsharp.png"/>](https://github.com/csulpizi/ChainSharp)|[Repository](https://github.com/csulpizi/ChainSharp)<br/>[![NuGet version (csulpizi.ChainSharp)](https://img.shields.io/nuget/v/csulpizi.ChainSharp.svg?style=flat-square)](https://www.nuget.org/packages/csulpizi.ChainSharp/)<p>A functional chaining C# library allowing you to chain both synchronous and asynchronous functions together. Enables writing idiomatic lambdas and closures without deeply nested functions or unnecessary bindings.</p>|
 |[<img width="300px" src="images/menu_clojure_cawfn.png"/>](https://github.com/csulpizi/cawfn)|[Repository](https://github.com/csulpizi/cawfn)<br/>[![Clojars Project](https://img.shields.io/clojars/v/cawfn.svg)](https://clojars.org/cawfn)<p>A Clojure library that provides a compile-time aware version of `clojure.core/defn`.</p>|
 |[<img width="300px" src="images/menu_clojure_with_redefs_x.png"/>](https://github.com/csulpizi/with-redefs-x)|[Repository](https://github.com/csulpizi/with-redefs-x)<p>Clojure extension of clojure.core/with-redefs, allowing self-referencing functions for stubbing in tests.</p>|
