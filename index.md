@@ -6,6 +6,7 @@
 |[<img width="300px" src="images/menu_icon_k_means.gif?raw=true"/>](https://github.com/csulpizi/Python-K-Means-Classifier)|[Repository](https://github.com/csulpizi/Python-K-Means-Classifier)<br/>A Python classifier that uses k-means clustering in up to N dimensions to define the decision boundary for each class.|
 |[<img width="300px" src="images/menu_java_publications.png"/>](https://github.com/csulpizi/publications)|[Repository](https://github.com/csulpizi/publications)<br/>A lightweight Java class for broadcasting messages and triggering events synchronously.|
 
+
 Other projects:
 - [Fedora Discord Updater](https://github.com/csulpizi/Fedora-Discord-Updater) Helper shell script for installing / updating discord on fedora
 - [Blender Scripts](https://github.com/csulpizi/blender_scripts) A few Blender scripts to speed up workflows
